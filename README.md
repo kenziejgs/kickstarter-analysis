@@ -11,7 +11,9 @@ In order to best guide the client towards the optimal launch date for their pote
 
 From the converted dates, the year for each datapoint was pulled into a separate column entitled "Years" using the `=year` function on Excel. This column was used in creating a Pivot Table with "Years" and "Parent Category" as possible filters, the "Date Created Conversion" as the rows and "Outcomes" as the columns and values, pictured below.
 
-![PIVOT TABLE](photo link)
+![PIVOT TABLE](https://github.com/kenziejgs/kickstarter-analysis/blob/43286c6a71ceda73ea5a80050c1ce9a6a90b39e3/Screen%20Shot%202022-06-15%20at%205.50.45%20PM.png)
 
+From this point, I was able to filter the data by "Parent Category" or "Years" to better aid the client. I filtered the data set by "Parent Category" to display only theater Kickstarter campaigns and created the following chart:
 
+![Theater Outcomes by Launch Date] ()
 
