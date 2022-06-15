@@ -9,3 +9,9 @@ This project utilized a dataset detailing the outcomes, initial dates, final dat
 ###### Analysis
 In order to best guide the client towards the optimal launch date for their potential Kickstarter campaign, I examined the data for any trends on outcome based upon launch dates. After converting the original launch dates from Unix format to readable dates, it became much easier to work with our data.
 
+From the converted dates, the year for each datapoint was pulled into a separate column entitled "Years" using the `=year` function on Excel. This column was used in creating a Pivot Table with "Years" and "Parent Category" as possible filters, the "Date Created Conversion" as the rows and "Outcomes" as the columns and values, pictured below.
+
+![PIVOT TABLE](photo link)
+
+
+
