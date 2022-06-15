@@ -15,5 +15,5 @@ From the converted dates, the year for each datapoint was pulled into a separate
 
 From this point, I was able to filter the data by "Parent Category" or "Years" to better aid the client. I filtered the data set by "Parent Category" to display only theater Kickstarter campaigns and created the following chart:
 
-![Theater Outcomes by Launch Date] (https://github.com/kenziejgs/kickstarter-analysis/blob/918e3ad43963d5c2430b14ff6bbfcdf5259459f2/Resources/Theater_Outcomes_vs_Launch.png)
+![Theater Outcomes by Launch Date](https://github.com/kenziejgs/kickstarter-analysis/blob/918e3ad43963d5c2430b14ff6bbfcdf5259459f2/Resources/Theater_Outcomes_vs_Launch.png)
 
