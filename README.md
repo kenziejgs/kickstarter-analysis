@@ -44,7 +44,7 @@ This same premise was used throughout the entire worksheet, depending on the cri
 ```
 Once this was completed for all possible categories, I calculated the total number of Kickstarters falling into the subcategory "plays" for each goal grouping with a simple `=SUM` formula and calculated the percentage of succesful, failed and canceled Kickstarter campaigns for each goal category. This left the following spreadsheet from which I could create a visualization:
 
-![Outcomes Spreadsheet]()
+![Outcomes Spreadsheet](https://github.com/kenziejgs/kickstarter-analysis/blob/b865dcd8dbffc57671f385a9dd0d7f84654b546b/Outcomes%20Spreadsheet.png)
 
 From this information, I used the data in the various percentage columns and the "Goal" column to create a line chart visualizing how many Kickstarter play campaigns were successful or failed based upon their initial funding goals.
 
