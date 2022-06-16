@@ -24,4 +24,8 @@ Another challenge that had to be addressed was the separation of the "Category a
 
 #### Outcomes Based on Goal
 ###### Analysis
+For this portion of my analysis, the goal was to demonstrate how a Kickstarter's initial goal impacted their success rate. This could help guide the client towards an appropriate goal amount for her project. In this case, I wanted to only show her the success or failure of Kickstarter campaigns similar to hers, so I needed to focus on the "plays" Subcategory specifically. It was also helpful to create large groupings of goal amounts because looking at the patterns with each distinct goal value would have yielded an outrageous number of different goals. In order to simplify the information and demonstrate general success rates by intial goal, I used the following breakdown of possible initial goals:
 
+![Goal Values]()
+
+In order to measure how many Kickstarter campaigns falling into the "plays" Subcategory were successful, failed or canceled, I used the `=COUNTIFS` formula in Excel to count a campaign _ONLY_ when it met all of the requirements described in the formula.
