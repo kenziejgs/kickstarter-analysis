@@ -48,4 +48,14 @@ Once this was completed for all possible categories, I calculated the total numb
 
 From this information, I used the data in the various percentage columns and the "Goal" column to create a line chart visualizing how many Kickstarter play campaigns were successful or failed based upon their initial funding goals.
 
-![Outcomes Chart]()
+![Outcomes Chart](https://github.com/kenziejgs/kickstarter-analysis/blob/7093e31a55eb36e598a3f7666f5a9d35a1c1cfbe/Resources/Outcomes_vs_Goals.png)
+
+###### Challenges
+One possible challenge from this analysis would be the creation of goal groupings. It is crucial to pay close attention to the wording of your groupings so as to not count the same data points twice. For example, the first grouping was "Less than 1000" and the second grouping is "1000 to 4999." When writing the formula, I was cautious to write "<1000" for the first grouping and ">=1000" for the second to ensure that any Kickstarter campgain with a goal of exactly $1000 was not counted twice or forgotten completely. This is always a potential error when creating groupings from a set of distinct values.
+
+Another interesting thing I ran into, although it was not necessarily a challenge, is that none of the Kickstarter campaigns in the subcategory we are considering were canceled. This means that we created a lot of formulas and spent time calculating percentages for a subsection of data that simply doesn't exist. This could be avoided in the future by filtering the data from the original worksheet to assess whether a "Number Canceled" column will even be necessary.
+
+## Results
+#### Theater Outcomes by Launch Date
+* This data shows us that the larget number of successful theater Kickstarter campaigns were launched in May and June.
+* After filtering the data by year, while the most successful months do vary a bit year by year, each and every year shows December to be the least successful month for launching a Kickstarter campaign in theater.
