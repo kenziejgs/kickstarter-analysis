@@ -26,6 +26,26 @@ Another challenge that had to be addressed was the separation of the "Category a
 ###### Analysis
 For this portion of my analysis, the goal was to demonstrate how a Kickstarter's initial goal impacted their success rate. This could help guide the client towards an appropriate goal amount for her project. In this case, I wanted to only show her the success or failure of Kickstarter campaigns similar to hers, so I needed to focus on the "plays" Subcategory specifically. It was also helpful to create large groupings of goal amounts because looking at the patterns with each distinct goal value would have yielded an outrageous number of different goals. In order to simplify the information and demonstrate general success rates by intial goal, I used the following breakdown of possible initial goals:
 
-![Goal Values]()
+![Goal Values](https://github.com/kenziejgs/kickstarter-analysis/blob/c04c734211b305db878a247a491c84417bb990d7/Screen%20Shot%202022-06-16%20at%208.40.03%20AM.png)
 
-In order to measure how many Kickstarter campaigns falling into the "plays" Subcategory were successful, failed or canceled, I used the `=COUNTIFS` formula in Excel to count a campaign _ONLY_ when it met all of the requirements described in the formula.
+In addition to these goal categories, each possible outcome was counted into seperate columns labeled "Number Successful," "Number Failed," and "Number Canceled." In order to measure how many Kickstarter campaigns falling into the "plays" Subcategory were successful, failed or canceled, I used the `=COUNTIFS` formula in Excel to count a campaign _ONLY_ when it met all of the requirements described in the formula. The formula was written to require that each data point was assessed based on the following criteria (found in the original Kickstarter worksheet) before being counted:
+
+* the initial Kickstarter goal value
+* the subcategory
+* the outcome
+
+For example, for the lowest goal grouping of "Less than 1000" in the "Number Successful" column, the formula was written to only count items with a goal less than $1000, that were designated as "plays" and had "successful" indicated in the outcomes column. This formula was written like this:
+```
+=COUNTIFS(Kickstarter!D:D,"<1000",Kickstarter!R:R,"plays",Kickstarter!F:F,"successful")
+```
+This same premise was used throughout the entire worksheet, depending on the criteria specified for the column and row. The only additional caveat to this process worth mentioning is that the formula has additional criteria to consider when the goal range is between two numbers, rather than simply less than $1000. This formula looks nearly identical, but is shown below:
+```
+=COUNTIFS(Kickstarter!D:D,">=1000", Kickstarter!D:D, "<=4999", Kickstarter!R:R,"plays",Kickstarter!F:F,"successful")
+```
+Once this was completed for all possible categories, I calculated the total number of Kickstarters falling into the subcategory "plays" for each goal grouping with a simple `=SUM` formula and calculated the percentage of succesful, failed and canceled Kickstarter campaigns for each goal category. This left the following spreadsheet from which I could create a visualization:
+
+![Outcomes Spreadsheet]()
+
+From this information, I used the data in the various percentage columns and the "Goal" column to create a line chart visualizing how many Kickstarter play campaigns were successful or failed based upon their initial funding goals.
+
+![Outcomes Chart]()
