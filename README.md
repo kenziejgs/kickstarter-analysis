@@ -1,8 +1,10 @@
 # An Analysis of Kickstarter Campaigns
-Analyzing the outcomes of various kickstarters with a focus on theater kickstarters
+### Analyzing the outcomes of theater Kickstarter campaigns
 ---
 ## Overview of Project
-This project utilized a dataset detailing the outcomes, initial dates, final dates, number of backers, and total pledged (among other variables) for a wide variety of Kickstarter campaigns. From within this dataset the client was primarily focused on the outcomes for Kickstarter campaigns in the theater world, specifically plays. In order to guide the client to a successful launch of their potential Kickstarter campaign, I wanted to demonstrate the outcome of various theater Kickstarters based upon their start date as well as their initial goal.
+This project utilized a dataset detailing the outcomes, initial dates, final dates, number of backers, and total pledged (among other variables) for a wide variety of Kickstarter campaigns. From within this dataset the client was primarily focused on the outcomes for Kickstarter campaigns in the theater world, specifically plays. The client is considering a Kickstarter campaign for their own US based play and is hoping for a successful campaign. In order to guide the client to a successful launch of their potential Kickstarter campaign, I wanted to demonstrate the outcome of various theater Kickstarters based upon their start date as well as their initial goal.
+
+The dataset utilized can be accessed here: [Kickstarter Challenge]()
 
 ## Analysis and Challenges
 #### Theater Outcomes by Launch Date
@@ -59,3 +61,16 @@ Another interesting thing I ran into, although it was not necessarily a challeng
 #### Theater Outcomes by Launch Date
 * This data shows us that the larget number of successful theater Kickstarter campaigns were launched in May and June.
 * After filtering the data by year, while the most successful months do vary a bit year by year, each and every year shows December to be the least successful month for launching a Kickstarter campaign in theater.
+#### Outcomes Based on Goal
+* The data demonstrates that Kickstarter campaigns for plays with a funding goal of less than $5000 were most successful. Both the "$1000 to $4999" grouping and the "Less than $1000" grouping demonstrated greater than 70% success rates.
+* 85% of the Kickstarter campaigns for plays in this data set had goals of less than $9999.
+#### Data Limitations
+Some limitations with this data set are as follows:
+* The data is skewed. Most Kickstarter campaigns in this data set have small goals, but the small number with larger goals may be impacting the integrity of our success measurements.
+* The data lists the "Average Donation," but does not give any data on the different levels of pledges. Most Kickstarters have various options for pledges (ie: $5 gets you a sticker, $10 gets you a coffee mug, $100 gets you backstage access, etc) and while the average donation value is helpful, it would be very beneficial to our client to see if a Kickstarter campaign is more or less likely to be successful based upon the pledge levels offered.
+* It is difficult to tell from this data whether a Kickstarter's donation data is skewed by a single large donation.
+#### Further Research
+The following analyses would be my recommendation for further research for this client:
+* Outcomes of Kickstarter campaigns for plays based on "Spotlight" and/or "Staff Picks"
+* Outcomes of Kickstarter campaigns for plays by Country
+* Average donation by Outcomes
