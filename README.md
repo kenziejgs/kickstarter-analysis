@@ -20,4 +20,8 @@ From this point, I was able to filter the data by "Parent Category" or "Years" t
 ###### Challenges
 One challenge with this particular analysis was the creation of the Pivot Table as shown. The rows category started out with three separate options for measuring the "Date Created Conversion" data and it required the analyst to remove the extra options of "years" and "quarters." This left us with the "Dates Created Conversion" variable being measured by month, which is the most likely to be helpful for the client.
 
-Another challenge that had to be addressed was the concatenation 
+Another challenge that had to be addressed was the separation of the "Category and Subcategory" column. This data was much more useful to me as seperate variables, but the original worksheet had the two listed together. In this case, the category and subcategory were distinguished using a "/" between the two. This made it simple to break them into separate columns using the "Text to Columns" option in Excel. However, in some cases, this may be accomplished using the Excel `=LEFT` or `=RIGHT` functions.
+
+#### Outcomes Based on Goal
+###### Analysis
+
