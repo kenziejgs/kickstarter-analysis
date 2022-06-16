@@ -4,7 +4,7 @@
 ## Overview of Project
 This project utilized a dataset detailing the outcomes, initial dates, final dates, number of backers, and total pledged (among other variables) for a wide variety of Kickstarter campaigns. From within this dataset the client was primarily focused on the outcomes for Kickstarter campaigns in the theater world, specifically plays. The client is considering a Kickstarter campaign for their own US based play and is hoping for a successful campaign. In order to guide the client to a successful launch of their potential Kickstarter campaign, I wanted to demonstrate the outcome of various theater Kickstarters based upon their start date as well as their initial goal.
 
-The dataset utilized can be accessed here: [Kickstarter Challenge]()
+The dataset utilized can be accessed here: [Kickstarter Challenge](https://github.com/kenziejgs/kickstarter-analysis/blob/c1aa0dc35ca4ad9af4d721db6d62175e736a3821/Kickstarter_Challenge.xlsx.zip)
 
 ## Analysis and Challenges
 #### Theater Outcomes by Launch Date
